@@ -45,7 +45,7 @@ function convertZeroToEnd(arr) {
   console.log(string);
 }
 
-convertZeroToEnd(testString);
+// convertZeroToEnd(testString);
 
 // to count the positive numbers
 arr = [1, -2, 3, 4];
@@ -58,4 +58,27 @@ function countPositiveNumbers(arr) {
   });
   console.log(count);
 }
-countPositiveNumbers(arr);
+// countPositiveNumbers(arr);
+
+// Using Array Destructuring get all of the names from this Nested Array "const moreStudents = ['Chris', ['Ahmad', 'Antigoni'], ['Toby', 'Sam']];"
+
+const students = ['Chris', ['Ahmad', 'Antigoni'], ['Toby', 'Sam']];
+
+const [student1, [student2, student3], [student4, student5]] = students;
+
+console.log(student1, student2, student3, student4, student5);
+
+// We have an object called 'user'.
+// Write the destructuring assignment that reads:
+// - 'name' property into the variable 'name'.
+// - 'years' property into the variable 'age'.
+// - 'isAdmin' property into the variable 'isAdmin' (false, if no such property)
+// */
+
+let user = { name: 'Brenda', years: 30 };
+
+let { name, years: age, isAdmin = false } = user;
+
+console.log(name);
+console.log(age);
+console.log(isAdmin);
