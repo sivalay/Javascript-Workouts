@@ -1,3 +1,4 @@
+// 1.
 // Program to do the flat method in Javascript.
 const theValues = [1, 2, [4, 3, [5, 6]]];
 function convertToArr(arr) {
@@ -6,6 +7,7 @@ function convertToArr(arr) {
 }
 // convertToArr(theValues);
 
+// 2.
 // Convert the Zeros to the end
 
 const testList = [2, 4, 7, 0, 21, 3, 0, 3, 0];
@@ -24,6 +26,7 @@ function swapZeroToEnd(arr) {
 }
 // swapZeroToEnd(testList);
 
+// 3.
 // Program to convert Zero to the end of a string
 
 // const testString = [2, 4, 7, 0, 21, 3, 0, 3, 0];
@@ -47,7 +50,9 @@ function convertZeroToEnd(arr) {
 
 // convertZeroToEnd(testString);
 
+// 4.
 // to count the positive numbers
+
 arr = [1, -2, 3, 4];
 function countPositiveNumbers(arr) {
   count = 0;
@@ -60,6 +65,7 @@ function countPositiveNumbers(arr) {
 }
 // countPositiveNumbers(arr);
 
+// 5.
 // Using Array Destructuring get all of the names from this Nested Array "const moreStudents = ['Chris', ['Ahmad', 'Antigoni'], ['Toby', 'Sam']];"
 
 const students = ['Chris', ['Ahmad', 'Antigoni'], ['Toby', 'Sam']];
@@ -68,6 +74,7 @@ const [student1, [student2, student3], [student4, student5]] = students;
 
 console.log(student1, student2, student3, student4, student5);
 
+// 6.
 // We have an object called 'user'.
 // Write the destructuring assignment that reads:
 // - 'name' property into the variable 'name'.
