@@ -89,3 +89,20 @@ let { name, years: age, isAdmin = false } = user;
 console.log(name);
 console.log(age);
 console.log(isAdmin);
+
+// 7.
+// Count thepositive number on an array
+
+array = [1, -2, 3, 4];
+
+function countPositive(arr) {
+  count = 0;
+  arr.forEach((value) => {
+    if (value >= 0) {
+      count += 1;
+    }
+  });
+  console.log(count);
+}
+
+countPositive(array);
