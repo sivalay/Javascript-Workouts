@@ -72,7 +72,7 @@ const students = ['Chris', ['Ahmad', 'Antigoni'], ['Toby', 'Sam']];
 
 const [student1, [student2, student3], [student4, student5]] = students;
 
-console.log(student1, student2, student3, student4, student5);
+// console.log(student1, student2, student3, student4, student5);
 
 // 6.
 // We have an object called 'user'.
@@ -86,9 +86,9 @@ let user = { name: 'Brenda', years: 30 };
 
 let { name, years: age, isAdmin = false } = user;
 
-console.log(name);
-console.log(age);
-console.log(isAdmin);
+// console.log(name);
+// console.log(age);
+// console.log(isAdmin);
 
 // 7.
 // Count thepositive number on an array
@@ -106,3 +106,27 @@ function countPositive(arr) {
 }
 
 countPositive(array);
+
+// 8.
+// Reverse a string
+
+const string = 'Welcome';
+
+function reverseString(string) {
+  const arrayString = string.split('');
+  const newString = [];
+  for (let i = arrayString.length - 1; i >= 0; i--) {
+    newString.push(arrayString[i]);
+  }
+  console.log(newString.join(''));
+}
+
+reverseString(string);
+
+// 10.
+// Replace the charecter of a string.
+
+const str = 'The red cat';
+
+const newStr = str.replace('red', 'blue');
+console.log(newStr);
