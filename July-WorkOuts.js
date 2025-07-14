@@ -130,3 +130,16 @@ const str = 'The red cat';
 
 const newStr = str.replace('red', 'blue');
 console.log(newStr);
+
+// 11.
+// Swap Last and End letters
+
+const swapString = 'Hello';
+
+function swapString(str) {
+  swapedArray = str.split('');
+  const newString = []
+  for(let i=0; i<swapedArray.length){
+    console.log(i)
+  }
+}
